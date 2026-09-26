@@ -24,7 +24,283 @@
     html {
       scroll-behavior: smooth;
     }
+<!-- =========================
+     MOOD COLLECTION
+========================= -->
 
+<section id="produtos" class="mood-products">
+
+  <div class="products-header">
+    <span class="products-label">MOOD COLLECTION</span>
+
+    <h2>Feito para quem vive o seu momento.</h2>
+
+    <p>
+      Peças selecionadas para quem prefere presença,
+      simplicidade e personalidade.
+    </p>
+  </div>
+
+  <div class="products-grid">
+
+    <!-- PRODUTO 1 -->
+    <article class="product-card">
+
+      <div class="product-image">
+        <img
+          src="https://placehold.co/800x1000/111111/FFFFFF?text=MOOD+T-SHIRT"
+          alt="MOOD T-Shirt"
+        >
+      </div>
+
+      <div class="product-info">
+
+        <span class="product-category">ESSENTIAL</span>
+
+        <h3>MOOD T-Shirt</h3>
+
+        <p class="product-description">
+          T-shirt pesada com identidade minimalista MOOD.
+        </p>
+
+        <div class="product-bottom">
+          <strong>12.500 Kz</strong>
+
+          <a
+            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20comprar%20a%20MOOD%20T-Shirt."
+            target="_blank"
+            rel="noopener"
+            class="buy-button">
+            Comprar
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 2 -->
+    <article class="product-card">
+
+      <div class="product-image">
+        <img
+          src="https://placehold.co/800x1000/E8E0D2/111111?text=MOOD+T-SHIRT+%2B+PASTA"
+          alt="MOOD T-Shirt com Pasta"
+        >
+      </div>
+
+      <div class="product-info">
+
+        <span class="product-category">SET</span>
+
+        <h3>T-Shirt + Pasta</h3>
+
+        <p class="product-description">
+          O conjunto MOOD para levar o teu estilo contigo.
+        </p>
+
+        <div class="product-bottom">
+          <strong>15.000 Kz</strong>
+
+          <a
+            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20comprar%20o%20conjunto%20T-Shirt%20%2B%20Pasta."
+            target="_blank"
+            rel="noopener"
+            class="buy-button">
+            Comprar
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+
+    <!-- PRODUTO 3 -->
+    <article class="product-card">
+
+      <div class="product-image">
+        <img
+          src="https://placehold.co/800x1000/6B1717/FFFFFF?text=MOOD+CAP"
+          alt="MOOD Cap"
+        >
+      </div>
+
+      <div class="product-info">
+
+        <span class="product-category">ACCESSORY</span>
+
+        <h3>MOOD Cap</h3>
+
+        <p class="product-description">
+          Boné MOOD com presença discreta e acabamento premium.
+        </p>
+
+        <div class="product-bottom">
+          <strong>Preço sob consulta</strong>
+
+          <a
+            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20saber%20o%20preço%20do%20MOOD%20Cap."
+            target="_blank"
+            rel="noopener"
+            class="buy-button">
+            Saber mais
+          </a>
+        </div>
+
+      </div>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     ESTILO DOS PRODUTOS
+========================= -->
+
+<style>
+
+.mood-products {
+  padding: 80px 20px;
+  background: #f7f5f1;
+  color: #111111;
+}
+
+.products-header {
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+}
+
+.products-label {
+  display: inline-block;
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.products-header h2 {
+  margin: 0 0 15px;
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1.05;
+  font-weight: 800;
+}
+
+.products-header p {
+  margin: 0;
+  color: #666666;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.products-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.product-card {
+  background: #ffffff;
+  overflow: hidden;
+  border: 1px solid #e8e5df;
+}
+
+.product-image {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: #eeeeee;
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.product-info {
+  padding: 24px;
+}
+
+.product-category {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: 700;
+  color: #777777;
+}
+
+.product-info h3 {
+  margin: 8px 0;
+  font-size: 23px;
+}
+
+.product-description {
+  color: #666666;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 42px;
+}
+
+.product-bottom {
+  margin-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.product-bottom strong {
+  font-size: 17px;
+}
+
+.buy-button {
+  display: inline-block;
+  padding: 12px 18px;
+  background: #111111;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.buy-button:hover {
+  background: #6b1717;
+}
+
+@media (max-width: 800px) {
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}
+
+@media (max-width: 560px) {
+
+  .mood-products {
+    padding: 60px 15px;
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-info {
+    padding: 20px;
+  }
+
+}
+
+</style>
     body {
       font-family: Arial, Helvetica, sans-serif;
       background: #080808;
