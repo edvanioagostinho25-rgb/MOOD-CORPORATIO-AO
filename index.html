@@ -1,1380 +1,1752 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>MOOD — Feito para quem vive o seu momento</title>
+<title>MOOD — Feito para quem vive o seu momento</title>
 
-  <meta name="description"
-        content="MOOD Corporation — Less Noise. More Mood. Moda urbana premium em Angola.">
-
-  <style>
-    /* ================================
-       MOOD CORPORATION
-       ESTILO PRINCIPAL
-    ================================= */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-<!-- =========================
-     MOOD COLLECTION
-========================= -->
-
-<section id="produtos" class="mood-products">
-
-  <div class="products-header">
-    <span class="products-label">MOOD COLLECTION</span>
-
-    <h2>Feito para quem vive o seu momento.</h2>
-
-    <p>
-      Peças selecionadas para quem prefere presença,
-      simplicidade e personalidade.
-    </p>
-  </div>
-
-  <div class="products-grid">
-
-    <!-- PRODUTO 1 -->
-    <article class="product-card">
-
-      <div class="product-image">
-        <img
-          src="https://placehold.co/800x1000/111111/FFFFFF?text=MOOD+T-SHIRT"
-          alt="MOOD T-Shirt"
-        >
-      </div>
-
-      <div class="product-info">
-
-        <span class="product-category">ESSENTIAL</span>
-
-        <h3>MOOD T-Shirt</h3>
-
-        <p class="product-description">
-          T-shirt pesada com identidade minimalista MOOD.
-        </p>
-
-        <div class="product-bottom">
-          <strong>12.500 Kz</strong>
-
-          <a
-            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20comprar%20a%20MOOD%20T-Shirt."
-            target="_blank"
-            rel="noopener"
-            class="buy-button">
-            Comprar
-          </a>
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- PRODUTO 2 -->
-    <article class="product-card">
-
-      <div class="product-image">
-        <img
-          src="https://placehold.co/800x1000/E8E0D2/111111?text=MOOD+T-SHIRT+%2B+PASTA"
-          alt="MOOD T-Shirt com Pasta"
-        >
-      </div>
-
-      <div class="product-info">
-
-        <span class="product-category">SET</span>
-
-        <h3>T-Shirt + Pasta</h3>
-
-        <p class="product-description">
-          O conjunto MOOD para levar o teu estilo contigo.
-        </p>
-
-        <div class="product-bottom">
-          <strong>15.000 Kz</strong>
-
-          <a
-            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20comprar%20o%20conjunto%20T-Shirt%20%2B%20Pasta."
-            target="_blank"
-            rel="noopener"
-            class="buy-button">
-            Comprar
-          </a>
-        </div>
-
-      </div>
-
-    </article>
-
-
-    <!-- PRODUTO 3 -->
-    <article class="product-card">
-
-      <div class="product-image">
-        <img
-          src="https://placehold.co/800x1000/6B1717/FFFFFF?text=MOOD+CAP"
-          alt="MOOD Cap"
-        >
-      </div>
-
-      <div class="product-info">
-
-        <span class="product-category">ACCESSORY</span>
-
-        <h3>MOOD Cap</h3>
-
-        <p class="product-description">
-          Boné MOOD com presença discreta e acabamento premium.
-        </p>
-
-        <div class="product-bottom">
-          <strong>Preço sob consulta</strong>
-
-          <a
-            href="https://wa.me/244939154755?text=Olá%20MOOD!%20Quero%20saber%20o%20preço%20do%20MOOD%20Cap."
-            target="_blank"
-            rel="noopener"
-            class="buy-button">
-            Saber mais
-          </a>
-        </div>
-
-      </div>
-
-    </article>
-
-  </div>
-
-</section>
-
-
-<!-- =========================
-     ESTILO DOS PRODUTOS
-========================= -->
+<meta name="description"
+content="MOOD Corporation — Less Noise. More Mood. Moda urbana premium em Angola.">
 
 <style>
 
-.mood-products {
-  padding: 80px 20px;
-  background: #f7f5f1;
-  color: #111111;
+/* =====================================================
+   MOOD CORPORATION
+   SITE OFICIAL — VERSÃO PREVIEW
+===================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-.products-header {
-  max-width: 700px;
-  margin: 0 auto 50px;
-  text-align: center;
+html{
+    scroll-behavior:smooth;
 }
 
-.products-label {
-  display: inline-block;
-  font-size: 12px;
-  letter-spacing: 3px;
-  font-weight: 700;
-  margin-bottom: 15px;
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#070707;
+    color:#fff;
+    line-height:1.5;
 }
 
-.products-header h2 {
-  margin: 0 0 15px;
-  font-size: clamp(30px, 5vw, 52px);
-  line-height: 1.05;
-  font-weight: 800;
+a{
+    color:inherit;
+    text-decoration:none;
 }
 
-.products-header p {
-  margin: 0;
-  color: #666666;
-  font-size: 16px;
-  line-height: 1.6;
+button{
+    font-family:inherit;
+    cursor:pointer;
 }
 
-.products-grid {
-  max-width: 1200px;
-  margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+header{
+    position:sticky;
+    top:0;
+    z-index:1000;
+
+    background:rgba(0,0,0,.94);
+    backdrop-filter:blur(15px);
+
+    border-bottom:1px solid #242424;
+
+    padding:20px;
+    text-align:center;
 }
 
-.product-card {
-  background: #ffffff;
-  overflow: hidden;
-  border: 1px solid #e8e5df;
+.logo{
+    font-size:clamp(42px,9vw,80px);
+    font-weight:900;
+    letter-spacing:12px;
+
+    background:linear-gradient(
+        90deg,
+        #ffffff,
+        #777,
+        #ffffff
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
 }
 
-.product-image {
-  width: 100%;
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-  background: #eeeeee;
+.slogan{
+    margin-top:4px;
+
+    font-size:10px;
+    letter-spacing:4px;
+
+    color:#888;
 }
 
-.product-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero{
+
+    min-height:550px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    text-align:center;
+
+    padding:60px 20px;
+
+    background:
+
+    radial-gradient(
+        circle at 10% 30%,
+        rgba(255,0,100,.35),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(0,100,255,.30),
+        transparent 30%
+    ),
+
+    radial-gradient(
+        circle at 50% 90%,
+        rgba(130,0,255,.30),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        135deg,
+        #030303,
+        #160008,
+        #080018,
+        #00121c,
+        #030303
+    );
+
+    background-size:200% 200%;
+
+    animation:gradientMove 12s ease infinite;
 }
 
-.product-info {
-  padding: 24px;
+@keyframes gradientMove{
+
+    0%{
+        background-position:0% 50%;
+    }
+
+    50%{
+        background-position:100% 50%;
+    }
+
+    100%{
+        background-position:0% 50%;
+    }
 }
 
-.product-category {
-  font-size: 10px;
-  letter-spacing: 2px;
-  font-weight: 700;
-  color: #777777;
+.hero-content{
+    max-width:900px;
 }
 
-.product-info h3 {
-  margin: 8px 0;
-  font-size: 23px;
+.hero h1{
+    font-size:clamp(60px,13vw,140px);
+
+    font-weight:900;
+
+    letter-spacing:12px;
+
+    text-shadow:
+        0 0 40px rgba(255,255,255,.15);
 }
 
-.product-description {
-  color: #666666;
-  font-size: 14px;
-  line-height: 1.5;
-  min-height: 42px;
+.hero p{
+
+    margin-top:15px;
+
+    font-size:15px;
+
+    letter-spacing:6px;
+
+    color:#eee;
 }
 
-.product-bottom {
-  margin-top: 22px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 15px;
+.hero-small{
+
+    margin-top:12px;
+
+    color:#aaa;
+
+    font-size:12px;
+
+    letter-spacing:3px;
 }
 
-.product-bottom strong {
-  font-size: 17px;
+.hero-button{
+
+    display:inline-block;
+
+    margin-top:35px;
+
+    padding:15px 35px;
+
+    background:#fff;
+
+    color:#000;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+    transition:.3s;
 }
 
-.buy-button {
-  display: inline-block;
-  padding: 12px 18px;
-  background: #111111;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 13px;
-  font-weight: 700;
-  transition: 0.2s ease;
+.hero-button:hover{
+
+    transform:scale(1.05);
+
+    background:#ddd;
 }
 
-.buy-button:hover {
-  background: #6b1717;
+
+/* =====================================================
+   SECTION
+===================================================== */
+
+.section{
+
+    padding:80px 6%;
 }
 
-@media (max-width: 800px) {
+.section-title{
 
-  .products-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+    text-align:center;
 
+    font-size:30px;
+
+    letter-spacing:5px;
+
+    margin-bottom:15px;
 }
 
-@media (max-width: 560px) {
+.section-subtitle{
 
-  .mood-products {
-    padding: 60px 15px;
-  }
+    text-align:center;
 
-  .products-grid {
-    grid-template-columns: 1fr;
-  }
+    color:#777;
 
-  .product-info {
-    padding: 20px;
-  }
+    font-size:13px;
+
+    letter-spacing:2px;
+
+    margin-bottom:45px;
+}
+
+
+/* =====================================================
+   PRODUTOS
+===================================================== */
+
+.products{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:20px;
+
+    max-width:1450px;
+
+    margin:auto;
+}
+
+
+/* =====================================================
+   PRODUCT CARD
+===================================================== */
+
+.product-card{
+
+    position:relative;
+
+    min-height:500px;
+
+    overflow:hidden;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #171717,
+            #070707
+        );
+
+    border:1px solid #292929;
+
+    transition:.45s;
+
+    display:flex;
+
+    flex-direction:column;
+}
+
+.product-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:#666;
+
+    box-shadow:
+        0 20px 60px rgba(0,0,0,.7);
+}
+
+
+/* =====================================================
+   BADGE
+===================================================== */
+
+.badge{
+
+    position:absolute;
+
+    top:18px;
+    left:18px;
+
+    z-index:5;
+
+    padding:7px 12px;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    color:#000;
+
+    font-size:9px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+}
+
+
+/* =====================================================
+   PRODUCT VISUAL
+===================================================== */
+
+.product-visual{
+
+    height:310px;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(255,255,255,.08),
+            transparent 55%
+        ),
+
+        linear-gradient(
+            135deg,
+            #161616,
+            #050505
+        );
+}
+
+
+/* =====================================================
+   T-SHIRT
+===================================================== */
+
+.tshirt{
+
+    position:relative;
+
+    width:150px;
+    height:180px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #161616,
+            #050505
+        );
+
+    clip-path:polygon(
+        25% 0,
+        0 18%,
+        15% 38%,
+        23% 27%,
+        23% 100%,
+        77% 100%,
+        77% 27%,
+        85% 38%,
+        100% 18%,
+        75% 0,
+        60% 10%,
+        40% 10%
+    );
+
+    filter:
+        drop-shadow(
+            0 20px 20px rgba(0,0,0,.8)
+        );
+
+    transition:.4s;
+}
+
+.product-card:hover .tshirt{
+
+    transform:
+        scale(1.08)
+        rotate(-2deg);
+}
+
+.tshirt::after{
+
+    content:"MOOD";
+
+    position:absolute;
+
+    top:78px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    font-size:15px;
+
+    font-weight:900;
+
+    letter-spacing:3px;
+
+    color:#fff;
+}
+
+
+/* =====================================================
+   BAG
+===================================================== */
+
+.bag{
+
+    position:relative;
+
+    width:170px;
+    height:125px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #c7b59b,
+            #806f58
+        );
+
+    border-radius:8px 8px 15px 15px;
+
+    box-shadow:
+        0 25px 35px rgba(0,0,0,.6);
+
+    transition:.4s;
+}
+
+.product-card:hover .bag{
+
+    transform:
+        scale(1.08)
+        rotate(2deg);
+}
+
+.bag::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:90px;
+    height:55px;
+
+    border:8px solid #806f58;
+
+    border-bottom:none;
+
+    border-radius:50px 50px 0 0;
+
+    left:40px;
+    top:-45px;
+}
+
+.bag::after{
+
+    content:"MOOD";
+
+    position:absolute;
+
+    left:50%;
+    top:50%;
+
+    transform:translate(-50%,-50%);
+
+    color:#171717;
+
+    font-size:18px;
+
+    font-weight:900;
+
+    letter-spacing:4px;
+}
+
+
+/* =====================================================
+   CHAPÉU
+===================================================== */
+
+.cap{
+
+    position:relative;
+
+    width:190px;
+    height:100px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #b68b6c,
+            #654936
+        );
+
+    border-radius:
+        100px 100px 35px 35px;
+
+    transform:rotate(-3deg);
+
+    box-shadow:
+        0 25px 35px rgba(0,0,0,.7);
+
+    transition:.4s;
+}
+
+.product-card:hover .cap{
+
+    transform:
+        scale(1.08)
+        rotate(-5deg);
+}
+
+.cap::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:115px;
+    height:45px;
+
+    border-radius:50%;
+
+    background:#87634c;
+
+    bottom:-20px;
+
+    left:20px;
+
+    transform:skewX(-20deg);
+}
+
+.cap::after{
+
+    content:"MOOD";
+
+    position:absolute;
+
+    top:35px;
+
+    left:70px;
+
+    font-size:15px;
+
+    font-weight:900;
+
+    letter-spacing:3px;
+
+    color:#fff;
+}
+
+
+/* =====================================================
+   SET
+===================================================== */
+
+.set-visual{
+
+    position:relative;
+
+    width:230px;
+
+    height:230px;
+}
+
+.set-visual .mini-shirt{
+
+    position:absolute;
+
+    width:100px;
+
+    height:120px;
+
+    background:#111;
+
+    left:20px;
+
+    top:65px;
+
+    clip-path:polygon(
+        25% 0,
+        0 18%,
+        15% 38%,
+        23% 27%,
+        23% 100%,
+        77% 100%,
+        77% 27%,
+        85% 38%,
+        100% 18%,
+        75% 0,
+        60% 10%,
+        40% 10%
+    );
+}
+
+.set-visual .mini-bag{
+
+    position:absolute;
+
+    width:115px;
+
+    height:80px;
+
+    background:#bba98f;
+
+    border-radius:8px;
+
+    right:5px;
+
+    bottom:35px;
+
+    transform:rotate(7deg);
+}
+
+.set-visual .mini-logo{
+
+    position:absolute;
+
+    width:100%;
+
+    top:15px;
+
+    text-align:center;
+
+    font-weight:900;
+
+    letter-spacing:5px;
+
+    font-size:22px;
+}
+
+
+/* =====================================================
+   PRODUCT INFO
+===================================================== */
+
+.product-info{
+
+    padding:22px;
+
+    margin-top:auto;
+}
+
+.product-info h3{
+
+    font-size:20px;
+
+    letter-spacing:3px;
+}
+
+.product-description{
+
+    color:#888;
+
+    font-size:12px;
+
+    margin-top:5px;
+}
+
+.price{
+
+    font-size:19px;
+
+    font-weight:bold;
+
+    margin-top:12px;
+}
+
+.available{
+
+    color:#777;
+
+    font-size:11px;
+
+    margin-top:4px;
+}
+
+.product-button{
+
+    width:100%;
+
+    padding:13px;
+
+    margin-top:18px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#fff;
+
+    color:#000;
+
+    font-weight:bold;
+
+    letter-spacing:1px;
+
+    transition:.3s;
+}
+
+.product-button:hover{
+
+    background:#ddd;
+
+    transform:scale(1.02);
+}
+
+
+/* =====================================================
+   3 COLUNAS
+===================================================== */
+
+.main-layout{
+
+    display:grid;
+
+    grid-template-columns:
+        220px
+        minmax(0,1fr)
+        220px;
+
+    gap:30px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+    padding:70px 25px;
+}
+
+.side-box{
+
+    background:#101010;
+
+    border:1px solid #252525;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    height:fit-content;
+
+    position:sticky;
+
+    top:120px;
+}
+
+.side-box h3{
+
+    font-size:15px;
+
+    letter-spacing:3px;
+
+    margin-bottom:20px;
+}
+
+.social-links a,
+.menu a{
+
+    display:block;
+
+    padding:12px 0;
+
+    color:#aaa;
+
+    border-bottom:1px solid #222;
+
+    transition:.3s;
+}
+
+.social-links a:hover,
+.menu a:hover{
+
+    color:#fff;
+
+    padding-left:5px;
+}
+
+
+/* =====================================================
+   FEED
+===================================================== */
+
+.feed-title{
+
+    font-size:30px;
+
+    letter-spacing:4px;
+
+    margin-bottom:30px;
+}
+
+.post{
+
+    background:#111;
+
+    border:1px solid #242424;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    margin-bottom:25px;
+}
+
+.post-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    margin-bottom:15px;
+}
+
+.post-header strong{
+
+    letter-spacing:2px;
+}
+
+.post-date{
+
+    color:#666;
+
+    font-size:12px;
+}
+
+.post-image{
+
+    height:300px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:12px;
+
+    margin:15px 0;
+
+    background:
+        radial-gradient(
+            circle,
+            #222,
+            #050505
+        );
+}
+
+.post p{
+
+    color:#bbb;
+}
+
+.post-actions{
+
+    margin-top:20px;
+
+    color:#777;
+
+    font-size:14px;
+}
+
+
+/* =====================================================
+   CLIENTES
+===================================================== */
+
+.clients{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:20px;
+}
+
+.client{
+
+    background:#111;
+
+    border:1px solid #252525;
+
+    border-radius:15px;
+
+    padding:25px;
+
+    color:#ccc;
+}
+
+.client strong{
+
+    display:block;
+
+    margin-top:15px;
+
+    color:#fff;
+}
+
+
+/* =====================================================
+   CONTACTO
+===================================================== */
+
+.contact{
+
+    text-align:center;
+
+    padding:90px 20px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            #050505,
+            #130009,
+            #050505
+        );
+}
+
+.contact h2{
+
+    font-size:40px;
+
+    letter-spacing:5px;
+
+    margin-bottom:15px;
+}
+
+.contact p{
+
+    color:#aaa;
+
+    margin-top:5px;
+}
+
+.whatsapp{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:15px 35px;
+
+    background:#fff;
+
+    color:#000;
+
+    border-radius:40px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+.whatsapp:hover{
+
+    transform:scale(1.05);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer{
+
+    background:#000;
+
+    border-top:1px solid #222;
+
+    text-align:center;
+
+    padding:50px 20px;
+}
+
+.footer-logo{
+
+    font-size:45px;
+
+    font-weight:900;
+
+    letter-spacing:8px;
+}
+
+footer p{
+
+    color:#666;
+
+    margin-top:15px;
+
+    font-size:12px;
+
+    letter-spacing:2px;
+}
+
+
+/* =====================================================
+   RESPONSIVO
+===================================================== */
+
+@media(max-width:1100px){
+
+    .products{
+
+        grid-template-columns:
+            repeat(2,1fr);
+    }
+}
+
+@media(max-width:950px){
+
+    .main-layout{
+
+        grid-template-columns:1fr;
+    }
+
+    .side-box{
+
+        position:static;
+    }
+
+    .main-layout .left{
+        order:2;
+    }
+
+    .main-layout .center{
+        order:1;
+    }
+
+    .main-layout .right{
+        order:3;
+    }
+
+    .clients{
+
+        grid-template-columns:1fr;
+    }
+}
+
+@media(max-width:600px){
+
+    header{
+
+        padding:18px 10px;
+    }
+
+    .logo{
+
+        font-size:40px;
+
+        letter-spacing:7px;
+    }
+
+    .hero{
+
+        min-height:500px;
+    }
+
+    .hero h1{
+
+        font-size:55px;
+
+        letter-spacing:6px;
+    }
+
+    .hero p{
+
+        font-size:11px;
+
+        letter-spacing:3px;
+    }
+
+    .section{
+
+        padding:55px 18px;
+    }
+
+    .products{
+
+        grid-template-columns:1fr;
+    }
+
+    .product-card{
+
+        min-height:470px;
+    }
+
+    .post-image{
+
+        height:230px;
+    }
 
 }
 
 </style>
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #080808;
-      color: #ffffff;
-      line-height: 1.5;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    button {
-      font-family: inherit;
-      cursor: pointer;
-    }
-
-    /* ================================
-       CABEÇALHO
-    ================================= */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-
-      background: #000000;
-      border-bottom: 1px solid #222;
-
-      padding: 22px 20px;
-      text-align: center;
-    }
-
-    .logo {
-      font-size: clamp(42px, 9vw, 80px);
-      font-weight: 900;
-      letter-spacing: 12px;
-
-      background: linear-gradient(
-        90deg,
-        #ffffff,
-        #dddddd,
-        #ffffff
-      );
-
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    .slogan {
-      margin-top: 4px;
-
-      font-size: 11px;
-      letter-spacing: 4px;
-      color: #999;
-    }
-
-    /* ================================
-       HERO
-    ================================= */
-
-    .hero {
-      min-height: 540px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-align: center;
-
-      padding: 50px 20px;
-
-      background:
-        radial-gradient(
-          circle at 15% 30%,
-          rgba(255, 0, 90, 0.35),
-          transparent 28%
-        ),
-        radial-gradient(
-          circle at 80% 20%,
-          rgba(0, 100, 255, 0.30),
-          transparent 30%
-        ),
-        radial-gradient(
-          circle at 50% 80%,
-          rgba(120, 0, 255, 0.30),
-          transparent 30%
-        ),
-        linear-gradient(
-          135deg,
-          #050505,
-          #170009,
-          #09001a,
-          #00111c,
-          #050505
-        );
-
-      background-size: 200% 200%;
-      animation: gradientMove 12s ease infinite;
-    }
-
-    @keyframes gradientMove {
-      0% {
-        background-position: 0% 50%;
-      }
-
-      50% {
-        background-position: 100% 50%;
-      }
-
-      100% {
-        background-position: 0% 50%;
-      }
-    }
-
-    .hero-content {
-      max-width: 850px;
-    }
-
-    .hero h1 {
-      font-size: clamp(50px, 12vw, 120px);
-      font-weight: 900;
-      letter-spacing: 10px;
-    }
-
-    .hero p {
-      margin-top: 15px;
-      font-size: 15px;
-      letter-spacing: 5px;
-      color: #eeeeee;
-    }
-
-    .hero-button {
-      display: inline-block;
-
-      margin-top: 35px;
-      padding: 14px 32px;
-
-      background: #ffffff;
-      color: #000000;
-
-      border-radius: 40px;
-
-      font-weight: bold;
-      letter-spacing: 2px;
-
-      transition: 0.3s;
-    }
-
-    .hero-button:hover {
-      transform: scale(1.05);
-      background: #eeeeee;
-    }
-
-    /* ================================
-       PRODUTOS
-    ================================= */
-
-    .section {
-      padding: 70px 6%;
-    }
-
-    .section-title {
-      text-align: center;
-
-      font-size: 30px;
-      letter-spacing: 5px;
-
-      margin-bottom: 40px;
-    }
-
-    .products {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 20px;
-    }
-
-    .product-card {
-      position: relative;
-      overflow: hidden;
-
-      min-height: 380px;
-
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-
-      padding: 25px;
-
-      border-radius: 18px;
-
-      background:
-        linear-gradient(
-          180deg,
-          transparent 30%,
-          rgba(0,0,0,0.95)
-        ),
-        linear-gradient(
-          135deg,
-          #1c1c1c,
-          #080808
-        );
-
-      border: 1px solid #272727;
-
-      transition: 0.4s;
-    }
-
-    .product-card:hover {
-      transform: translateY(-8px);
-      border-color: #555;
-    }
-
-    .product-icon {
-      position: absolute;
-
-      top: 35%;
-      left: 50%;
-
-      transform: translate(-50%, -50%);
-
-      font-size: 100px;
-      opacity: 0.75;
-    }
-
-    .product-card h3 {
-      font-size: 24px;
-      letter-spacing: 3px;
-    }
-
-    .product-card p {
-      color: #aaa;
-      margin: 5px 0 15px;
-    }
-
-    .product-button {
-      width: 100%;
-
-      padding: 12px;
-
-      border: none;
-      border-radius: 30px;
-
-      background: #ffffff;
-      color: #000;
-
-      font-weight: bold;
-    }
-
-    /* ================================
-       LAYOUT 3 COLUNAS
-    ================================= */
-
-    .main-layout {
-      display: grid;
-
-      grid-template-columns:
-        220px
-        minmax(0, 1fr)
-        220px;
-
-      gap: 30px;
-
-      max-width: 1400px;
-
-      margin: auto;
-
-      padding: 70px 25px;
-    }
-
-    .side-box {
-      background: #101010;
-
-      border: 1px solid #252525;
-
-      border-radius: 18px;
-
-      padding: 25px;
-
-      height: fit-content;
-
-      position: sticky;
-      top: 120px;
-    }
-
-    .side-box h3 {
-      font-size: 15px;
-
-      letter-spacing: 3px;
-
-      margin-bottom: 20px;
-    }
-
-    /* ================================
-       REDES SOCIAIS
-    ================================= */
-
-    .social-links a {
-      display: block;
-
-      padding: 12px 0;
-
-      color: #aaa;
-
-      border-bottom: 1px solid #222;
-
-      transition: 0.3s;
-    }
-
-    .social-links a:hover {
-      color: #fff;
-      padding-left: 5px;
-    }
-
-    /* ================================
-       MENU
-    ================================= */
-
-    .menu a {
-      display: block;
-
-      padding: 12px 0;
-
-      color: #aaa;
-
-      border-bottom: 1px solid #222;
-
-      transition: 0.3s;
-    }
-
-    .menu a:hover {
-      color: #fff;
-      padding-left: 5px;
-    }
-
-    /* ================================
-       FEED
-    ================================= */
-
-    .feed-title {
-      font-size: 30px;
-
-      letter-spacing: 4px;
-
-      margin-bottom: 30px;
-    }
-
-    .post {
-      background: #111;
-
-      border: 1px solid #242424;
-
-      border-radius: 18px;
-
-      padding: 25px;
-
-      margin-bottom: 25px;
-    }
-
-    .post-header {
-      display: flex;
-      justify-content: space-between;
-
-      margin-bottom: 15px;
-    }
-
-    .post-header strong {
-      letter-spacing: 2px;
-    }
-
-    .post-date {
-      color: #666;
-      font-size: 12px;
-    }
-
-    .post-image {
-      height: 300px;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      border-radius: 12px;
-
-      margin: 15px 0;
-
-      font-size: 70px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #171717,
-          #050505
-        );
-    }
-
-    .post p {
-      color: #bbb;
-    }
-
-    .post-actions {
-      margin-top: 20px;
-
-      color: #888;
-
-      font-size: 14px;
-    }
-
-    /* ================================
-       CLIENTES
-    ================================= */
-
-    .clients {
-      display: grid;
-
-      grid-template-columns:
-        repeat(3, 1fr);
-
-      gap: 20px;
-    }
-
-    .client {
-      background: #111;
-
-      border: 1px solid #252525;
-
-      border-radius: 15px;
-
-      padding: 25px;
-
-      color: #ccc;
-    }
-
-    .client strong {
-      display: block;
-
-      margin-top: 15px;
-
-      color: #fff;
-    }
-
-    /* ================================
-       CONTACTO
-    ================================= */
-
-    .contact {
-      text-align: center;
-
-      padding: 80px 20px;
-
-      background:
-        linear-gradient(
-          135deg,
-          #050505,
-          #130009,
-          #050505
-        );
-    }
-
-    .contact h2 {
-      font-size: 40px;
-
-      letter-spacing: 5px;
-
-      margin-bottom: 15px;
-    }
-
-    .contact p {
-      color: #aaa;
-    }
-
-    .whatsapp {
-      display: inline-block;
-
-      margin-top: 30px;
-
-      padding: 15px 35px;
-
-      background: #ffffff;
-      color: #000000;
-
-      border-radius: 40px;
-
-      font-weight: bold;
-
-      transition: 0.3s;
-    }
-
-    .whatsapp:hover {
-      transform: scale(1.05);
-    }
-
-    /* ================================
-       RODAPÉ
-    ================================= */
-
-    footer {
-      background: #000;
-
-      border-top: 1px solid #222;
-
-      text-align: center;
-
-      padding: 50px 20px;
-    }
-
-    footer .footer-logo {
-      font-size: 45px;
-
-      font-weight: 900;
-
-      letter-spacing: 8px;
-    }
-
-    footer p {
-      color: #666;
-
-      margin-top: 15px;
-
-      font-size: 12px;
-
-      letter-spacing: 2px;
-    }
-
-    /* ================================
-       RESPONSIVO
-    ================================= */
-
-    @media (max-width: 950px) {
-
-      .main-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .side-box {
-        position: static;
-      }
-
-      .products {
-        grid-template-columns: 1fr;
-      }
-
-      .clients {
-        grid-template-columns: 1fr;
-      }
-
-      .main-layout .left {
-        order: 2;
-      }
-
-      .main-layout .center {
-        order: 1;
-      }
-
-      .main-layout .right {
-        order: 3;
-      }
-    }
-
-    @media (max-width: 600px) {
-
-      header {
-        padding: 18px 10px;
-      }
-
-      .logo {
-        font-size: 40px;
-        letter-spacing: 7px;
-      }
-
-      .hero {
-        min-height: 500px;
-      }
-
-      .hero h1 {
-        font-size: 55px;
-        letter-spacing: 6px;
-      }
-
-      .hero p {
-        font-size: 11px;
-        letter-spacing: 3px;
-      }
-
-      .section {
-        padding: 55px 18px;
-      }
-
-      .product-card {
-        min-height: 330px;
-      }
-
-      .post-image {
-        height: 230px;
-      }
-    }
-  </style>
 </head>
+
 
 <body>
 
-  <!-- ================================
-       CABEÇALHO
-  ================================= -->
 
-  <header>
+<!-- =====================================================
+     HEADER
+===================================================== -->
+
+<header>
 
     <div class="logo">
-      MOOD
+        MOOD
     </div>
 
     <div class="slogan">
-      FEITO PARA QUEM VIVE O SEU MOMENTO
+        FEITO PARA QUEM VIVE O SEU MOMENTO
     </div>
 
-  </header>
+</header>
 
 
-  <!-- ================================
-       HERO
-  ================================= -->
+<!-- =====================================================
+     HERO
+===================================================== -->
 
-  <section class="hero">
+<section class="hero">
 
     <div class="hero-content">
 
-      <h1>MOOD</h1>
+        <h1>MOOD</h1>
 
-      <p>
-        LESS NOISE. MORE MOOD.
-      </p>
+        <p>
+            LESS NOISE. MORE MOOD.
+        </p>
 
-      <a
-        href="#produtos"
-        class="hero-button"
-      >
-        VER COLEÇÃO
-      </a>
+        <div class="hero-small">
+            MODA • IDENTIDADE • ATITUDE
+        </div>
+
+        <a
+            href="#produtos"
+            class="hero-button"
+        >
+            VER COLEÇÃO
+        </a>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================================
-       PRODUTOS
-  ================================= -->
+<!-- =====================================================
+     PRODUTOS
+===================================================== -->
 
-  <section
+<section
     class="section"
     id="produtos"
-  >
+>
 
     <h2 class="section-title">
-      MOOD COLLECTION
+        MOOD COLLECTION
     </h2>
+
+    <p class="section-subtitle">
+        ALGUNS DOS PRODUTOS DA MOOD
+    </p>
+
 
     <div class="products">
 
-      <!-- T-SHIRT -->
 
-      <div class="product-card">
+        <!-- =================================================
+             T-SHIRT
+        ================================================== -->
 
-        <div class="product-icon">
-          👕
+        <div class="product-card">
+
+            <span class="badge">
+                NEW DROP
+            </span>
+
+            <div class="product-visual">
+
+                <div class="tshirt"></div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    HEAVY T-SHIRT
+                </h3>
+
+                <div class="product-description">
+                    MOOD Essential Collection
+                </div>
+
+                <div class="price">
+                    12.500 Kz
+                </div>
+
+                <div class="available">
+                    Disponível
+                </div>
+
+                <button
+                    class="product-button"
+                    onclick="comprar('MOOD Heavy T-Shirt — 12.500 Kz')"
+                >
+                    COMPRAR
+                </button>
+
+            </div>
+
         </div>
 
-        <h3>
-          T-SHIRT
-        </h3>
 
-        <p>
-          MOOD Heavy Tee
-        </p>
+        <!-- =================================================
+             BOLSA
+        ================================================== -->
 
-        <button
-          class="product-button"
-          onclick="comprar('T-SHIRT MOOD')"
-        >
-          COMPRAR
-        </button>
+        <div class="product-card">
 
-      </div>
+            <span class="badge">
+                PREMIUM
+            </span>
 
+            <div class="product-visual">
 
-      <!-- BOLSA -->
+                <div class="bag"></div>
 
-      <div class="product-card">
+            </div>
 
-        <div class="product-icon">
-          👜
+            <div class="product-info">
+
+                <h3>
+                    MOOD BAG
+                </h3>
+
+                <div class="product-description">
+                    Espaçosa • Prática • Versátil
+                </div>
+
+                <div class="price">
+                    BREvemente
+                </div>
+
+                <div class="available">
+                    Nova coleção
+                </div>
+
+                <button
+                    class="product-button"
+                    onclick="comprar('MOOD Bag')"
+                >
+                    SABER MAIS
+                </button>
+
+            </div>
+
         </div>
 
-        <h3>
-          BOLSAS
-        </h3>
 
-        <p>
-          MOOD Bag
-        </p>
+        <!-- =================================================
+             CHAPÉU
+        ================================================== -->
 
-        <button
-          class="product-button"
-          onclick="comprar('BOLSA MOOD')"
-        >
-          COMPRAR
-        </button>
+        <div class="product-card">
 
-      </div>
+            <span class="badge">
+                LIMITED
+            </span>
 
+            <div class="product-visual">
 
-      <!-- CHAPÉU -->
+                <div class="cap"></div>
 
-      <div class="product-card">
+            </div>
 
-        <div class="product-icon">
-          🧢
+            <div class="product-info">
+
+                <h3>
+                    MOOD CAP
+                </h3>
+
+                <div class="product-description">
+                    Design exclusivo MOOD
+                </div>
+
+                <div class="price">
+                    BREvemente
+                </div>
+
+                <div class="available">
+                    Em preparação
+                </div>
+
+                <button
+                    class="product-button"
+                    onclick="comprar('MOOD Cap')"
+                >
+                    SABER MAIS
+                </button>
+
+            </div>
+
         </div>
 
-        <h3>
-          CHAPÉUS
-        </h3>
 
-        <p>
-          MOOD Cap
-        </p>
+        <!-- =================================================
+             SET
+        ================================================== -->
 
-        <button
-          class="product-button"
-          onclick="comprar('CHAPÉU MOOD')"
-        >
-          COMPRAR
-        </button>
+        <div class="product-card">
 
-      </div>
+            <span class="badge">
+                MOOD SET
+            </span>
+
+            <div class="product-visual">
+
+                <div class="set-visual">
+
+                    <div class="mini-logo">
+                        MOOD
+                    </div>
+
+                    <div class="mini-shirt"></div>
+
+                    <div class="mini-bag"></div>
+
+                </div>
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>
+                    MOOD SET
+                </h3>
+
+                <div class="product-description">
+                    T-Shirt + Bag
+                </div>
+
+                <div class="price">
+                    15.000 Kz
+                </div>
+
+                <div class="available">
+                    Combo especial
+                </div>
+
+                <button
+                    class="product-button"
+                    onclick="comprar('MOOD SET — T-Shirt + Bag — 15.000 Kz')"
+                >
+                    COMPRAR SET
+                </button>
+
+            </div>
+
+        </div>
+
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================================
-       3 COLUNAS
-  ================================= -->
+<!-- =====================================================
+     3 COLUNAS
+===================================================== -->
 
-  <main class="main-layout">
+<main class="main-layout">
 
 
-    <!-- ============================
-         ESQUERDA
-    ============================= -->
+    <!-- ESQUERDA -->
 
     <aside class="side-box left">
 
-      <h3>
-        SEGUE-NOS
-      </h3>
+        <h3>
+            SEGUE-NOS
+        </h3>
 
-      <div class="social-links">
+        <div class="social-links">
 
-        <a href="#">
-          Facebook
-        </a>
+            <a href="#">
+                Facebook
+            </a>
 
-        <a href="#">
-          TikTok
-        </a>
+            <a href="#">
+                TikTok
+            </a>
 
-        <a href="#">
-          Instagram
-        </a>
+            <a
+                href="https://www.instagram.com/edvanio_agostinho/"
+                target="_blank"
+            >
+                Instagram
+            </a>
 
-      </div>
+        </div>
 
     </aside>
 
 
-    <!-- ============================
-         CENTRO
-    ============================= -->
+    <!-- CENTRO -->
 
     <section class="center">
 
-      <h2 class="feed-title">
-        MOOD NEWS
-      </h2>
+        <h2 class="feed-title">
+            MOOD NEWS
+        </h2>
 
 
-      <!-- POST 1 -->
+        <article class="post">
 
-      <article class="post">
+            <div class="post-header">
 
-        <div class="post-header">
+                <strong>
+                    NOVO DROP
+                </strong>
 
-          <strong>
-            NOVO DROP
-          </strong>
+                <span class="post-date">
+                    2026
+                </span>
 
-          <span class="post-date">
-            2026
-          </span>
+            </div>
 
-        </div>
+            <div class="post-image">
 
-        <div class="post-image">
-          👕
-        </div>
+                <div class="tshirt"></div>
 
-        <p>
-          A nova coleção MOOD está a chegar.
-          Prepare-te para viver o teu momento.
-        </p>
+            </div>
 
-        <div class="post-actions">
-          ❤️ 0 &nbsp;&nbsp; 💬 0
-        </div>
+            <p>
+                A nova coleção MOOD está a chegar.
+                Prepare-te para viver o teu momento.
+            </p>
 
-      </article>
+            <div class="post-actions">
+                ❤️ 0 &nbsp;&nbsp; 💬 0
+            </div>
 
-
-      <!-- POST 2 -->
-
-      <article class="post">
-
-        <div class="post-header">
-
-          <strong>
-            MOOD PEOPLE
-          </strong>
-
-          <span class="post-date">
-            CLIENTES
-          </span>
-
-        </div>
-
-        <div class="post-image">
-          🧢
-        </div>
-
-        <p>
-          A MOOD é feita por pessoas que
-          vivem o seu próprio momento.
-        </p>
-
-        <div class="post-actions">
-          ❤️ 0 &nbsp;&nbsp; 💬 0
-        </div>
-
-      </article>
+        </article>
 
 
-      <!-- POST 3 -->
+        <article class="post">
 
-      <article class="post">
+            <div class="post-header">
 
-        <div class="post-header">
+                <strong>
+                    MOOD PEOPLE
+                </strong>
 
-          <strong>
-            LESS NOISE.
-          </strong>
+                <span class="post-date">
+                    CLIENTES
+                </span>
 
-          <span class="post-date">
-            MORE MOOD.
-          </span>
+            </div>
 
-        </div>
+            <div class="post-image">
 
-        <div class="post-image">
-          👜
-        </div>
+                <div class="cap"></div>
 
-        <p>
-          Menos barulho.
-          Mais identidade.
-          Mais MOOD.
-        </p>
+            </div>
 
-        <div class="post-actions">
-          ❤️ 0 &nbsp;&nbsp; 💬 0
-        </div>
+            <p>
+                A MOOD é feita por pessoas que
+                vivem o seu próprio momento.
+            </p>
 
-      </article>
+            <div class="post-actions">
+                ❤️ 0 &nbsp;&nbsp; 💬 0
+            </div>
+
+        </article>
+
+
+        <article class="post">
+
+            <div class="post-header">
+
+                <strong>
+                    LESS NOISE.
+                </strong>
+
+                <span class="post-date">
+                    MORE MOOD.
+                </span>
+
+            </div>
+
+            <div class="post-image">
+
+                <div class="bag"></div>
+
+            </div>
+
+            <p>
+                Menos barulho.
+                Mais identidade.
+                Mais MOOD.
+            </p>
+
+            <div class="post-actions">
+                ❤️ 0 &nbsp;&nbsp; 💬 0
+            </div>
+
+        </article>
 
     </section>
 
 
-    <!-- ============================
-         DIREITA
-    ============================= -->
+    <!-- DIREITA -->
 
     <aside class="side-box right">
 
-      <h3>
-        MENU
-      </h3>
+        <h3>
+            MENU
+        </h3>
 
-      <nav class="menu">
+        <nav class="menu">
 
-        <a href="#">
-          Início
-        </a>
+            <a href="#">
+                Início
+            </a>
 
-        <a href="#produtos">
-          Produtos
-        </a>
+            <a href="#produtos">
+                Produtos
+            </a>
 
-        <a href="#clientes">
-          Clientes
-        </a>
+            <a href="#clientes">
+                Clientes
+            </a>
 
-        <a href="#contacto">
-          Contacto
-        </a>
+            <a href="#contacto">
+                Contacto
+            </a>
 
-        <a href="#contacto">
-          Endereço
-        </a>
+            <a href="#contacto">
+                Endereço
+            </a>
 
-        <a href="#">
-          Visitantes
-        </a>
+            <a href="#">
+                Visitantes
+            </a>
 
-        <a href="#">
-          Ver mais
-        </a>
+            <a href="#produtos">
+                Ver mais
+            </a>
 
-      </nav>
+        </nav>
 
     </aside>
 
-  </main>
+</main>
 
 
-  <!-- ================================
-       CLIENTES
-  ================================= -->
+<!-- =====================================================
+     CLIENTES
+===================================================== -->
 
-  <section
+<section
     class="section"
     id="clientes"
-  >
+>
 
     <h2 class="section-title">
-      MOOD PEOPLE
+        MOOD PEOPLE
     </h2>
+
+    <p class="section-subtitle">
+        MAIS QUE ESTILO. É ATITUDE.
+    </p>
 
     <div class="clients">
 
-      <div class="client">
+        <div class="client">
 
-        <p>
-          "A MOOD não é apenas uma roupa.
-          É o meu momento."
-        </p>
+            <p>
+                "A MOOD não é apenas uma roupa.
+                É o meu momento."
+            </p>
 
-        <strong>
-          — Cliente MOOD
-        </strong>
+            <strong>
+                — Cliente MOOD
+            </strong>
 
-      </div>
-
-
-      <div class="client">
-
-        <p>
-          "Less noise. More Mood."
-        </p>
-
-        <strong>
-          — Cliente MOOD
-        </strong>
-
-      </div>
+        </div>
 
 
-      <div class="client">
+        <div class="client">
 
-        <p>
-          "Identidade é aquilo que
-          escolhemos vestir."
-        </p>
+            <p>
+                "Less noise. More Mood."
+            </p>
 
-        <strong>
-          — Cliente MOOD
-        </strong>
+            <strong>
+                — Cliente MOOD
+            </strong>
 
-      </div>
+        </div>
+
+
+        <div class="client">
+
+            <p>
+                "Identidade é aquilo que
+                escolhemos vestir."
+            </p>
+
+            <strong>
+                — Cliente MOOD
+            </strong>
+
+        </div>
 
     </div>
 
-  </section>
+</section>
 
 
-  <!-- ================================
-       CONTACTO
-  ================================= -->
+<!-- =====================================================
+     CONTACTO
+===================================================== -->
 
-  <section
+<section
     class="contact"
     id="contacto"
-  >
+>
 
     <h2>
-      CONTACTA A MOOD
+        CONTACTA A MOOD
     </h2>
 
     <p>
-      Luanda — Angola
+        Luanda — Angola
     </p>
 
     <p>
-      Fala connosco pelo WhatsApp.
+        WhatsApp: 939 154 755
     </p>
 
     <a
-      class="whatsapp"
-      href="https://wa.me/244939154755"
-      target="_blank"
+        class="whatsapp"
+        href="https://wa.me/244939154755"
+        target="_blank"
     >
-      WHATSAPP
+        FALAR NO WHATSAPP
     </a>
 
-  </section>
+</section>
 
 
-  <!-- ================================
-       FOOTER
-  ================================= -->
+<!-- =====================================================
+     FOOTER
+===================================================== -->
 
-  <footer>
+<footer>
 
     <div class="footer-logo">
-      MOOD
+        MOOD
     </div>
 
     <p>
-      LESS NOISE. MORE MOOD.
+        LESS NOISE. MORE MOOD.
     </p>
 
     <p>
-      © 2026 MOOD Corporation
+        © 2026 MOOD Corporation
     </p>
 
-  </footer>
+</footer>
 
 
-  <!-- ================================
-       JAVASCRIPT
-  ================================= -->
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
 
-  <script>
+<script>
 
-    function comprar(produto) {
+function comprar(produto){
 
-      const numero = "244939154755";
+    const numero = "244939154755";
 
-      const mensagem =
-        "Olá MOOD! 👋%0A%0A" +
-        "Tenho interesse em comprar:%0A" +
+    const mensagem =
+        "Olá MOOD! 👋\n\n" +
+        "Tenho interesse neste produto:\n" +
         produto +
-        "%0A%0AGostaria de saber mais informações.";
+        "\n\nGostaria de saber mais informações.";
 
-      const link =
+    const link =
         "https://wa.me/" +
         numero +
         "?text=" +
-        mensagem;
+        encodeURIComponent(mensagem);
 
-      window.open(link, "_blank");
+    window.open(link, "_blank");
 
-    }
+}
 
-  </script>
+</script>
+
 
 </body>
 </html>
